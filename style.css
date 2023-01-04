@@ -1,0 +1,238 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: auto 40px;
+}
+header, #navbar, main, #enlaces-contacto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  margin-bottom: 30px;
+  background-color: #BCFFDF;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 45px;
+  text-shadow: 4px 4px 1px #42ca88;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+#navbar {
+  list-style: none;
+}
+#navbar li{
+  margin-left: 50px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+#container-text {
+  width: 70%;
+}
+#container-text h1{
+  font-weight: bolder;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+#container-perfil {
+  width: 30%;
+  text-align: center;
+}
+
+.texto {
+  margin: 5px auto;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00263E;
+}
+
+#contenedor-botones {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+.btn-info {
+  margin: 10px 30px;
+  margin-left: auto;
+  background-color: transparent;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-info:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn-info a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#enlaces-contacto {
+  margin: 20px;
+  list-style: none;
+  width: 36%;
+}
+.descripcion {
+  margin: 20px auto;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00263E;
+
+}
+#container-habilidades {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+#lista-tecnologias, #lista-habilidades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 10px;
+}
+#lista-tecnologias li {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+#lista-habilidades li {
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+#container-contacto h1{
+  font-weight: bolder;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+
+#container-formulario {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#mensaje {
+  resize: none;
+}  
+
+
+#nombre, #correo, #mensaje  {
+  font-size: 30px;
+  margin: 10px;
+  border: none;
+  background-color: #BCFFDF;
+  padding: 10px;
+  border-radius: 10px;
+}
+#nombre::placeholder, #correo::placeholder,#mensaje::placeholder {
+  color: #969696;
+}
+#nombre:focus::placeholder, #correo:focus::placeholder, #mensaje:focus::placeholder {
+  color: transparent;
+}
+
+#nombre:focus, #correo:focus, #mensaje:focus{ 
+  outline: none;
+}
+
+#formulario-contacto{
+  text-align: center;
+}
+
+#btn-enviar-mensaje{
+  margin: 10px 30px;
+  margin-left: auto;
+  background-color: transparent;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+
+}
+#btn-enviar-mensaje:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+#container-proyectos {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#container-proyectos article {
+  box-shadow: 5px 5px 5px 4px rgb(187, 187, 187);
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 70px;
+  margin-bottom: 60px;
+  max-width: 300px;
+  min-height: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#container-proyectos article:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 4px rgb(126, 126, 126)
+}
+
+#container-proyectos ul {
+  list-style: none;
+}
+.git-proyectos {
+  text-align: end;
+}
+
+.lista-tecnologias-usadas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lista-tecnologias-usadas li {
+  margin: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo-card-proyecto{
+  font-size: 25px;
+  color:#3eca86;
+  margin-bottom: 20px;
+}
+.contenido-card-proyecto{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
