@@ -48,7 +48,7 @@ ul li a{
 }
 #container-text h1{
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -130,7 +130,7 @@ ul li a{
 
 #container-contacto h1{
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
   width: 70%;
   -webkit-user-select: none; /* Safari */
@@ -340,6 +340,7 @@ ul li a{
     width: 100%;
   }
   header p {
+    text-align: center;
     font-size: 35px;
   }
   header nav {
@@ -360,7 +361,7 @@ ul li a{
     width: 100%;
   }
   #container-text h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
   #container-perfil {
     width: 100%;
@@ -388,7 +389,7 @@ ul li a{
 
 
   #container-contacto h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   #container-formulario form div{
     display: flex;
@@ -403,7 +404,7 @@ ul li a{
     visibility: hidden;
   }
   #lista-tecnologias,#lista-habilidades {
-    margin: auto 70px;
+    margin: auto 3px;
   }
 
   #main-sm {
