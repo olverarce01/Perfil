@@ -239,4 +239,6 @@ ul li a{
 
 #contenedor-btn-Inicio {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
