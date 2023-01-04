@@ -27,14 +27,17 @@
     </div>
   </main>
   <div id="container-formulario">
-    <form action="" id="formulario-contacto">
+    <form action="https://formsubmit.co/olver_arce01@hotmail.cl" id="formulario-contacto" method="post">
       <div>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off" required>
-        <input type="email" name="correo" id="correo" placeholder="Correo" autocomplete="off" required>
+        <input type="text" name="name" id="nombre" placeholder="Nombre" autocomplete="off" required>
+        <input type="email" name="email" id="correo" placeholder="Correo" autocomplete="off" required>
       </div>
+      <input type="hidden" name="subject" value="Desarrollo Web Arica">
       <div>
-        <textarea id="mensaje" placeholder="Mensaje" rows="4" cols="46" required></textarea>
+        <textarea id="mensaje" name="comments" placeholder="Mensaje" rows="4" cols="46" required></textarea>
       </div>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://olverarce01.github.io/Perfil/screens/gracias.html">
       <button type="submit" id="btn-enviar-mensaje">Enviar</button>
     </form>  
   </div>
