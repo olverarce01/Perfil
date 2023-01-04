@@ -242,3 +242,7 @@ ul li a{
   display: flex;
   justify-content: center;
 }
+
+#btn-inicio{
+  margin: auto;
+}
