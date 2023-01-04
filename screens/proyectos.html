@@ -15,7 +15,9 @@
 <body>
   <header>
     <p>Olver Arce Limache</p>
-    <button id="btn-nav"><img src="../assets/navbar.png" alt="" width="50"></button>
+    <div id="container-btn-nav">
+      <button id="btn-nav"><img src="../assets/navbar.png" alt="" width="50"></button>
+    </div>
     <nav>
       <ul id="navbar">
         <li><a href="../index.html">Inicio</a></li>
@@ -167,11 +169,11 @@
     function responsiveNav(width){
       console.log(width);
       if(width<1023) {
+        $("#container-btn-nav").show();
         $("#navbar").hide();
-        $("#btn-nav").show();
       }else {
+        $("#container-btn-nav").hide();
         $("#navbar").show();
-        $("#btn-nav").hide();
       }
     }
 
@@ -180,7 +182,6 @@
     window.onresize = (event) => {
       responsiveNav(event.target.innerWidth);
     };
-
 
     $("#btn-nav").click(function(){
       $("#navbar").toggle("slow");
