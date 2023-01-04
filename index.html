@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Olver Arce Limache</title>
 </head>
 <body>
   <header>
     <p>Olver Arce Limache</p>
+    <button id="btn-nav"><img src="./assets/navbar.png" alt="" width="50"></button>
     <nav>
       <ul id="navbar">
         <li><a href="./index.html">Inicio</a></li>
@@ -40,6 +42,28 @@
       <img src="./assets/perfil.png" alt="perfil" srcset="" width="250" draggable="false">
     </div>
   </main>
+  <script>
+    function responsiveNav(width){
+      console.log(width);
+      if(width<1023) {
+        $("#navbar").hide();
+        $("#btn-nav").show();
+      }else {
+        $("#navbar").show();
+        $("#btn-nav").hide();
+      }
+    }
 
+    responsiveNav(window.innerWidth);
+
+    window.onresize = (event) => {
+      responsiveNav(event.target.innerWidth);
+    };
+
+
+    $("#btn-nav").click(function(){
+      $("#navbar").toggle("slow");
+    });
+  </script>
 </body>
 </html>

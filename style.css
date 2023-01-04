@@ -194,6 +194,7 @@ ul li a{
   margin: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #container-proyectos article {
   box-shadow: 5px 5px 5px 4px rgb(187, 187, 187);
@@ -245,4 +246,169 @@ ul li a{
 
 #btn-inicio{
   margin: 50px auto;
+}
+#main-sm {
+  display: none;
+  visibility: hidden;
+}
+#btn-nav {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  display: inline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1023px) {
+  #enlaces-contacto li {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header p {
+    margin-bottom: 35px;
+  }
+  #navbar {
+    display: inline;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+  }
+  #navbar li a{
+    font-size: 40px;
+  }
+  header nav {
+    margin: 10px auto;
+  }
+  #navbar li {
+    margin: 20px;
+  }
+
+  #container-text h1 {
+    font-size: 60px;
+  }
+  #container-text {
+    width: 65%;
+  }
+  #container-perfil {
+    width: 35%;
+  }
+  #contenedor-botones {
+    width: 100%;
+    margin: auto;
+  }
+  #enlaces-contacto li{
+    margin: auto 15px;
+  }
+  #container-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container-proyectos article {
+    margin: 20px;
+  }
+  #container-contacto h1 {
+    font-size: 60px;
+  }
+  #nombre, #correo {
+    width: 40%;
+  }
+  #mensaje {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #navbar {
+    display: inline;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+  }
+  header p {
+    font-size: 35px;
+  }
+  header nav {
+    margin: 10px auto;
+  }
+  #navbar li {
+    margin: 20px;
+  }
+  #navbar li a{
+    font-size: 40px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  #container-text {
+    width: 100%;
+  }
+  #container-text h1 {
+    font-size: 65px;
+  }
+  #container-perfil {
+    width: 100%;
+  }
+  #contenedor-botones{
+    width: 100%;
+    text-align: center;
+  }
+  #enlaces-contacto {
+    width: 100%;
+    margin: 40px auto;
+  }
+  #enlaces-contacto li {
+    margin: auto;
+  }
+  #container-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #container-proyectos article{
+    justify-content: center;
+    margin: 25px 10px;
+  }
+
+
+  #container-contacto h1 {
+    font-size: 60px;
+  }
+  #container-formulario form div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nombre, #correo, #mensaje {
+    width: 80%;
+    margin: 15px auto;
+  }
+  #main-bg {
+    display: none;
+    visibility: hidden;
+  }
+  #lista-tecnologias,#lista-habilidades {
+    margin: auto 70px;
+  }
+
+  #main-sm {
+    display: inline-block;
+    visibility: visible;
+  }
+  
 }
